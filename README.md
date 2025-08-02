@@ -2,8 +2,6 @@
 
 A curated collection of **Terraform projects for AWS infrastructure**. Each folder in this repository represents an **independent Terraform project**, complete with `main.tf`, variables, and output files.
 
-> 🔐 Secrets like `.env` and `.tfstate` are excluded from the repository using `.gitignore`.
-
 ---
 
 ## 📂 Project Structure
