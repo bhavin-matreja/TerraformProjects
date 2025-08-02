@@ -1,6 +1,6 @@
 # Terraform AWS Examples 🚀
 
-A curated collection of **Terraform projects for AWS infrastructure**. Each folder in this repository represents an **independent Terraform project**, complete with `main.tf`, variables, and output files — designed to help you learn, test, or reference real-world Terraform usage for AWS.
+A curated collection of **Terraform projects for AWS infrastructure**. Each folder in this repository represents an **independent Terraform project**, complete with `main.tf`, variables, and output files.
 
 > 🔐 Secrets like `.env` and `.tfstate` are excluded from the repository using `.gitignore`.
 
