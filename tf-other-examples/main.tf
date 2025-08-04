@@ -37,9 +37,9 @@ resource "aws_instance" "mywebserver" {
     #prevent_destroy = true
 
     # ignore state changes for proerty after initally created
-    ignore_changes = [
-      ami
-    ]
+    # ignore_changes = [
+    #   ami
+    # ]
 
     # if any of given condition change, recreate the instance
     # without this, if we change the port to 8080, it will update sg without affecting instance
@@ -47,15 +47,16 @@ resource "aws_instance" "mywebserver" {
 
     #Allow you to define checks that must be true before resource is created (precondition) 
     #and after a resource is created (postcondition).
-    precondition {
-      condition = ""
-      error_message = ""
-    }
+    
+    # precondition {
+    #   condition = aws_security_group.main.id != ""
+    #   error_message = "Security group ID must not be blank"
+    # }
 
-    postcondition {
-      condition = ""
-      error_message = ""
-    }
+    # postcondition {
+    #   condition = self.public_ip != ""
+    #   error_message = "Public IP is not present."
+    # }
   }
 
   tags = {
